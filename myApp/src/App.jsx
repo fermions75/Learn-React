@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Cards from './Components/Cards';
 
 function formatName(user) {
   return user.firstName + ' ' + user.lastName;
@@ -22,20 +21,14 @@ function getGreeting(user) {
 };
 
 
-function Apps() {
+function Apps(props) {
 
   return (
+    <>
 
-    <Card style={{ width: '18rem' }}>
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+    <Cards/>
+    
+    </>
 
   )
 }
